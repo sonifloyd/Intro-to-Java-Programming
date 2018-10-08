@@ -9,10 +9,11 @@
 
     public class Problm1{
         public static void main(String[] args) {
-            isPrint();
+            Problm1 p= new Problm1()
+            int a= p.isPrint();
         }
-            
-           static int isPrint ()
+        
+     int isPrint()
            
            {
             int n=5;

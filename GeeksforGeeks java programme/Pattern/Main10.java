@@ -19,7 +19,8 @@ public class Main10{
     static void isPrint(){
         int n=7,k=0,c;
         for(int i=1;i<=n;i++){
-           if(i <= 4){
+           if(i <= 4){ // condition operator
+             //if it is true then k increment if it is false then k decrement
              k++ ;
            }
              else { k--;}

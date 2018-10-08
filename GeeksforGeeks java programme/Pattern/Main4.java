@@ -19,7 +19,7 @@ public class Main4{
    for(int i=1;i<=n;i++){
      for(int j=1;j<=n;j++){
        if(j>=6-i)
-       System.out.print("x");
+       System.out.print("x"+"");
        else
        System.out.print(" ");
      }
