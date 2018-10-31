@@ -17,7 +17,7 @@ U V W X Y
                 
               for(int j=1;j<=n;j++){
                   
-                  System.out.print(char(k+64));
+                  System.out.print(char(k+64)+"");
                   k++;
                   
                   
