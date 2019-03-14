@@ -13,6 +13,8 @@ void f1(){//inner classs
 }
 }
 }
+-outer class may be public or default
+-inner class be public ,private ,protected ,default
 
 A sub-class is a class which inherits from another class called super class. Sub-class can access all 
 public and protected methods and fields of its super class.
