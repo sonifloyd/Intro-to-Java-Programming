@@ -18,4 +18,77 @@ void f1(){//inner classs
 
 A sub-class is a class which inherits from another class called super class. Sub-class can access all 
 public and protected methods and fields of its super class.
+# In a class implementing an interface, can we change the value of any variable defined in the interface?
+Ans: No, we can't change the value of any variable of an interface in the implementing class as all variables defined in the interface are by default public, static and Final and final variables are like constants which can't be changed later.
+# Can we have static methods in an Interface?
+Ans: Static methods can't be overridden in any class while any methods in an interface are by default abstract and are supposed to be implemented in the classes being implementing the interface. So it makes no sense to have static methods in an interface in Java.
+# Can we call a non-static method from inside a static method?
+Ans: Non-Static methods are owned by objects of a class and have object level scope and in order to call the non-Static methods from a static block (like from a static main method), an object of the class needs to be created first. Then using object reference, these methods can be invoked.
+ # Describe different states of a thread.
+Ans: A thread in Java can be in either of the following states:
+
+Ready: When a thread is created, it's in Ready state.
+Running: A thread currently being executed is in running state.
+Waiting: A thread waiting for another thread to free certain resources is in waiting state.
+Dead: A thread which has gone dead after execution is in dead state.
+# What are the two ways of implementing multi-threading in Java?
+
+Ans: Multi threaded applications can be developed in Java by using any of the following two methodologies:
+
+1. By using Java.Lang.Runnable Interface. Classes implement this interface to enable multi threading. There is a Run() method in this interface which is implemented.
+
+2. By writing a class that extend Java.Lang.Thread class.
+# How an object is serialized in java?
+
+Ans: In java, to convert an object into byte stream by serialization, an interface with the name Serializable is implemented by the class. All objects of a class implementing serializable interface get serialized and their state is saved in byte stream.
+
+#  When we should use serialization?
+
+Ans: Serialization is used when data needs to be transmitted over the network. Using serialization, object's state is saved and converted into byte stream .The byte stream is transferred over the network and the object is re-created at destination.
+ # What is the difference between continue and break statement?
+
+Ans: break and continue are two important keywords used in Loops. When a break keyword is used in a loop, loop is broken instantly while when continue keyword is used, current iteration is broken and loop continues with next iteration.
+
+In below example, Loop is broken when counter reaches 4.
+
+for (counter = 0; counter & lt; 10; counter++)
+    system.out.println(counter);
+
+if (counter == 4) {
+
+    break;
+}
+
+}
+In the below example when counter reaches 4, loop jumps to next iteration and any statements after the continue keyword are skipped for current iteration.
+
+for (counter = 0; counter < 10; counter++)
+    system.out.println(counter);
+
+if (counter == 4) {
+
+    continue;
+}
+system.out.println("This will not get printed when counter is 4");
+}
+# What is an infinite Loop? How infinite loop is declared?
+
+Ans: An infinite loop runs without any condition and runs infinitely. An infinite loop can be broken by defining any breaking logic in the body of the statement blocks.
+
+Infinite loop is declared as follows:
+
+for (;;)
+{
+    // Statements to execute
+
+    // Add any loop breaking logic
+}
+
+
+
+
+
+
+
+
 
