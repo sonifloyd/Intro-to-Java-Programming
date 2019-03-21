@@ -98,6 +98,32 @@ Because these classes are incomplete, they have abstract methods that have no bo
 1. An abstract class has no use until unless it is extended by some other class.
 2. If you declare an abstract method in a class then you must declare the class abstract as well. you can’t have abstract method in a concrete class. It’s vice versa is not always true: If a class is not having any abstract method then also it can be marked as abstract.
 3. It can have non-abstract method (concrete) as well.
+# Note: The class which is extending abstract class must override all the abstract methods.
+abstract class MyClass{
+   public void disp(){
+     System.out.println("Concrete method of parent class");
+   }
+   abstract public void disp2();
+}
+
+class Demo extends MyClass{
+   /* Must Override this method while extending
+    * MyClas
+    */
+   public void disp2()
+   {
+       System.out.println("overriding abstract method");
+   }
+   public static void main(String args[]){
+       Demo obj = new Demo();
+       obj.disp2();
+   }
+}
+//output
+overriding abstract method
+
+
+
 
 
 
