@@ -121,6 +121,7 @@ class Demo extends MyClass{
 }
 //output
 overriding abstract method
+# All the methods of an interface are public abstract by default. You cannot have concrete (regular methods with body) methods in an interface.
 
 
 
