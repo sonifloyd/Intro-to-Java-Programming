@@ -91,6 +91,14 @@ Even though both are part of JVM and both consumers memory allocated to the Java
 A class that is declared using “abstract” keyword is known as abstract class. It can have abstract methods(methods without body) as well as concrete methods (regular methods with body). A normal class(non-abstract class) cannot have abstract methods.
 # Note 2 :A class derived from the abstract class must implement all those methods that are declared as abstract in the parent class.
 # Note 3: If a child does not implement all the abstract methods of abstract parent class, then the child class must need to be declared abstract as well.
+# Why can’t we create the object of an abstract class?
+Because these classes are incomplete, they have abstract methods that have no body .
+# Concrete class : A  class which is not abstract is referred as Concrete class.
+# Key Points:
+1. An abstract class has no use until unless it is extended by some other class.
+2. If you declare an abstract method in a class then you must declare the class abstract as well. you can’t have abstract method in a concrete class. It’s vice versa is not always true: If a class is not having any abstract method then also it can be marked as abstract.
+3. It can have non-abstract method (concrete) as well.
+
 
 
 
