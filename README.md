@@ -86,7 +86,11 @@ for (;;)
 # can we add a non abstract method on interface
 Well, prior to Java 8, it wasn't possible to add non-abstract methods in Java but nowadays you can add non-abstract static, default, and private methods in Java interface. The static and default methods were supported as part of interface evolution in Java 8 and you can add private methods on an interface from Java 9 onwards. Since long, many Java programmers feel that there is no real use of an interface, well that's completely wrong, given how interface allows you to write generic, decoupled code, most of those sentiments comes from no implementation on the interface.
 # Difference b/w heap and stack memory in java Jvm
-Even though both are part of JVM and both consumers memory allocated to the Java process, there are many differences between them e.g. Heap memory is shared by all threads of Java application but Stack memory is local to each thread. Objects are created in heap memory but method frames are stored in Stack memory, and size of heap space is much bigger than the small size of Stack in Java. Even if you know this much information about heap and stack in Java, 
+Even though both are part of JVM and both consumers memory allocated to the Java process, there are many differences between them e.g. Heap memory is shared by all threads of Java application but Stack memory is local to each thread. Objects are created in heap memory but method frames are stored in Stack memory, and size of heap space is much bigger than the small size of Stack in Java. Even if you know this much information about heap and stack in Java.
+# what is abstract class.
+A class that is declared using “abstract” keyword is known as abstract class. It can have abstract methods(methods without body) as well as concrete methods (regular methods with body). A normal class(non-abstract class) cannot have abstract methods.
+# Note 2 :A class derived from the abstract class must implement all those methods that are declared as abstract in the parent class.
+# Note 3: If a child does not implement all the abstract methods of abstract parent class, then the child class must need to be declared abstract as well.
 
 
 
